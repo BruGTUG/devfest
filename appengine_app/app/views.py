@@ -48,23 +48,30 @@ def team(request):
                               context_instance=RequestContext(request))
 
 
+def workshops(request):
+    context = {
+        "active_menu": "index",
+    }
+    return render_to_response('pages/workshops.html', context,
+                              context_instance=RequestContext(request))
+
 def openhackday(request):
     context = {
-        "active_menu": "none",
+        "active_menu": "index",
     }
     return render_to_response('pages/openhackday.html', context,
                               context_instance=RequestContext(request))
 
 def techtalks(request):
     context = {
-        "active_menu": "none",
+        "active_menu": "index",
     }
-    return render_to_response('pages/conference.html', context,
+    return render_to_response('pages/techtalks.html', context,
                               context_instance=RequestContext(request))
   
 def registration(request):
     context = {
-        "active_menu": "none",
+        "active_menu": "index",
     }
     return render_to_response('pages/registration.html', context,
                               context_instance=RequestContext(request))

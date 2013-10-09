@@ -1,0 +1,35 @@
+{% extends "base.html" %} 
+
+{% load static %} 
+
+{% block page_title %}Tech Talks &middot; GDG DevFest Belgium 2013{% endblock %} 
+
+{% block carousel %} 
+    {% include "blocks/carousel.html" %} 
+{% endblock %} 
+
+{% block content %}
+    <h1 id="speakers_header">Tech Talks</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-circle" src="/static/images/conference.png" alt="Tech Talks">
+        </div>
+        <div class="col-md-9">
+            <p>
+                <b style="font-weight: 600;">16 November</b>, the three main topics of this track are <i>Android</i>, <i>AngularJS</i> and <i>App Engine</i> (in alphabetic order).                 
+                The talks are 45-60 minutes long and gives you inside in a particular aspect of the technology. The goal is to inspire you to try out new things during 
+                the open hack day afterwards. 
+                See the list of <a href="/speakers/">awesome speakers</a> and the <a href="/agenda">up-to-date agenda</a>.                
+            </p>
+                        
+            <div class="alert alert-warning" style="margin-top: 50px;">
+                <i>
+                    <a href="https://docs.google.com/forms/d/15JU2jaxtqcBwTeFCMq4FjmEAnBI8BwTwfGBsFLkReW0/viewform" id="become_speaker"  class="btn btn-default">Become a speaker</a></i>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    
+    {% include "blocks/partners.html" %} 
+
+{% endblock %}

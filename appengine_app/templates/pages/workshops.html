@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+
+{% load static %} 
+
+{% block page_title %}Workshops &middot; DevFest Belgium 2013{% endblock %} 
+
+{% block carousel %} 
+    {% include "blocks/carousel.html" %} 
+{% endblock %} 
+
+{% block content %}
+    <h1 id="speakers_header">Workshops</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-circle" src="/static/images/conference.png" alt="Tech Talks">
+        </div>
+        <div class="col-md-9">
+            <p>
+                <b style="font-weight: 600;">16 November</b> Three workshops are planned for beginners to get you into <i>Android</i>, <i>AngularJS</i> and <i>App Engine</i>.
+                The workshops take 2 hours. You should bring your laptop or a friend with a laptop.
+            </p>            
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    
+    {% include "blocks/partners.html" %} 
+
+{% endblock %}
